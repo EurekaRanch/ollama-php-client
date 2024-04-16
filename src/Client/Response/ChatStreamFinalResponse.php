@@ -16,7 +16,7 @@ class ChatStreamFinalResponse extends ChatStreamResponse
             done: $data['done'],
             totalDuration: $data['total_duration'],
             loadDuration: $data['load_duration'],
-            promptEvalCount: $data['prompt_eval_count'],
+            promptEvalCount: $data['prompt_eval_count'] ?? 0,
             promptEvalDuration: $data['prompt_eval_duration'],
             evalCount: $data['eval_count'],
         );
